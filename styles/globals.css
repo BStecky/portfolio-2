@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-primary dark:bg-dark_background dark:text-dark_primary;
+    @apply bg-background text-primary dark:bg-dark_background dark:text-dark_primary transition-all ease-in-out; 
     @apply min-h-screen;
   }
   
@@ -36,6 +36,7 @@
   .btn{
     @apply inline-block px-5 py-3 rounded-lg hover:bg-indigo-600 transition duration-300 shadow-lg bg-indigo-500 text-white capitalize tracking-wider font-semibold text-sm sm:text-xl focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 whitespace-nowrap
   }
+
 }
 
 

@@ -5,8 +5,10 @@ import {AiOutlineMenu, AiOutlineClose, AiOutlineFolderOpen, AiOutlineMail} from 
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {BsFillPersonLinesFill, BsSun, BsFillMoonFill} from 'react-icons/bs'
 import {useTheme} from "next-themes";
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Navbar = () => {
+
   const [nav, setNav] = useState(false) 
   const handleNav = () => {
     setNav(!nav)
@@ -21,7 +23,7 @@ const Navbar = () => {
     const currentTheme = theme === "system" ? systemTheme : theme ;
 
     if(currentTheme ==="dark"){
-      return (
+      return (    
         <BsSun className="ml-5 mr-5 w-6 h-6 text-yellow-500 " role="button" onClick={() => setTheme('light')} />
       )
     }

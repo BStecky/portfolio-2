@@ -3,14 +3,35 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {AiOutlineMenu, AiOutlineClose, AiOutlineFolderOpen, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {BsFillPersonLinesFill, BsSun, BsFillMoonFill} from 'react-icons/bs'
+import {useTheme} from "next-themes";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
-  
+  const [nav, setNav] = useState(false) 
   const handleNav = () => {
     setNav(!nav)
   }
+  const {systemTheme, theme, setTheme} = useTheme();
+  const [mounted, setMounted] = useState(false);
+      useEffect(() =>{
+        setMounted(true);
+      },[])
+  const renderThemeChanger= () => {
+    if(!mounted) return null;
+    const currentTheme = theme === "system" ? systemTheme : theme ;
+
+    if(currentTheme ==="dark"){
+      return (
+        <BsSun className="ml-5 mr-5 w-6 h-6 text-yellow-500 " role="button" onClick={() => setTheme('light')} />
+      )
+    }
+
+    else {
+      return (
+        <BsFillMoonFill className="ml-5 mr-5 w-6 h-6 text-gray-900 " role="button" onClick={() => setTheme('dark')} />
+      )
+    }
+ };
   // This will reset the navbar state to false if screen is larger than 640px
   // useEffect(() => {
   //   // Listen for screen resize events
@@ -33,6 +54,7 @@ const Navbar = () => {
   
   return (
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
+        
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
           <Image src="/../public/assets/navLogo.png" alt="/" width='50' height='20'/>
           <div>
@@ -52,6 +74,7 @@ const Navbar = () => {
               <Link href='/'>
                   <li className='ml-10 text-sm uppercase hover:border-black'>Contact</li>
               </Link>
+              {renderThemeChanger()}
             </ul>
             
             {/* Mobile Button */}

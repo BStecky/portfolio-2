@@ -55,8 +55,7 @@ const Navbar = () => {
   // }
   
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
-        
+    <div className='w-[98%] h-20 z-[100] rounded-md ml-auto mr-auto mt-2 shadow-md nav'> 
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
           <Image src="/../public/assets/navLogo.png" alt="/" width='50' height='20'/>
           <div>
@@ -80,7 +79,7 @@ const Navbar = () => {
             </ul>
             
             {/* Mobile Button */}
-            <div onClick={handleNav} className='md:hidden'>
+            <div onClick={handleNav} className='md:hidden hover:cursor-pointer'>
               <AiOutlineMenu size={25}/>
             </div>
             

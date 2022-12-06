@@ -5,10 +5,24 @@
 
 @layer base {
   body {
-    @apply bg-background text-primary dark:bg-dark_background dark:text-dark_primary transition-all ease-in-out; 
+    @apply bg-[url('../public/assets/lightWaves.svg')] dark:bg-[url('../public/assets/darkWaves.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary transition-all ease-in-out; 
     @apply min-h-screen;
   }
   
+  .nav {
+    @apply bg-[#eeeeee] font-bold dark:bg-[#29263a] dark:font-bold;
+  }
+
+  /* body {
+    @apply bg-[url('../public/assets/yellowWaves.svg')] dark:bg-[url('../public/assets/darkWaves.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary transition-all ease-in-out; 
+    @apply min-h-screen;
+  }
+  
+  .nav {
+    @apply bg-[#fae9c1] font-bold dark:bg-[#29263a] dark:font-bold;
+  } */
+
+
   ::selection {
     @apply text-white bg-indigo-500;
   }

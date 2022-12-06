@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:  {
+        'yellowwaves': "url('/../public/assets/yellow-waves.svg')",
+      },
       colors: {
         primary: '#3f2b96',
         secondary: '#ecc94b',

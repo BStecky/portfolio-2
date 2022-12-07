@@ -5,10 +5,10 @@
 
 @layer base {
   body {
-    @apply bg-[url('../public/assets/lightWaves.svg')] dark:bg-[url('../public/assets/darkWaves.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary transition-all ease-in-out; 
+    @apply bg-[url('../public/assets/lightanimated3.svg')] dark:bg-[url('../public/assets/darkanimated2.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary dark:text-secondary transition-all ease-in-out; 
     @apply min-h-screen;
   }
-  
+
   .nav {
     @apply bg-[#eeeeee] font-bold dark:bg-[#29263a] dark:font-bold;
   }

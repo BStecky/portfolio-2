@@ -51,7 +51,7 @@ const Hero = () => {
                     >
                     <h2 className='py-4'>Full-Stack Developer</h2>
                 </motion.div>
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-between items-center max-w-[330px] m-auto py-4'>
                         <motion.div
                         animate={{ x: 0, y: 0, opacity: 2 }}
                         initial={{ x: 0, y: 50, opacity: 0}}

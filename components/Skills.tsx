@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Skills = () => {
   return (
-    <div className='w-full lg:h-screen p-2'>
+    <section className='w-full lg:h-screen p-2 bg-two'>
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
             <p className='text-xl tracking-widest uppercase'>Skills</p>
             <div className='grid md:grid-cols2 lg:grid-cols-4 gap-8'>
@@ -68,7 +68,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

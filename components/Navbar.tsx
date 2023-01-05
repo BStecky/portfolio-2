@@ -55,36 +55,35 @@ const Navbar = () => {
   // }
   
   return (
-    <div className='w-[98%] h-20 z-[100] rounded-md ml-auto mr-auto mt-2 shadow-md nav'> 
-        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+    <div className='w-[100%] h-20 z-[100] rounded-b-md ml-auto mr-auto shadow-md nav'> 
+        <div className='flex justify-between text-center items-center w-full h-full px-2 2xl:px-16'>
           <Image src="/../public/assets/navLogo.png" alt="/" width='50' height='20'/>
           <div>
             <ul className='hidden md:flex'>
               <Link href='/'>
                   <li className='ml-10 text-sm uppercase hover:border-black'>Home</li>
               </Link>
-              <Link href='/#about'>
+              <Link href='/about'>
                   <li className='ml-10 text-sm uppercase hover:border-black'>About</li>
               </Link>
-              <Link href='/'>
-                  <li className='ml-10 text-sm uppercase hover:border-black'>Skills</li>
-              </Link>
-              <Link href='/'>
+              {/* <Link href='/'>
                   <li className='ml-10 text-sm uppercase hover:border-black'>Projects</li>
-              </Link>
-              <Link href='/'>
+              </Link> */}
+              <Link href='/contact'>
                   <li className='ml-10 text-sm uppercase hover:border-black'>Contact</li>
               </Link>
-              {renderThemeChanger()}
+              <div className='ml-auto'>
+                {renderThemeChanger()} 
+              </div>            
             </ul>
             
-            {/* Mobile Button */}
-            <div onClick={handleNav} className='md:hidden hover:cursor-pointer'>
+          </div>
+           {/* Mobile Button */}
+           <div onClick={handleNav} className='md:hidden hover:cursor-pointer'>
               <AiOutlineMenu size={25}/>
             </div>
-            
-          </div>
         </div>
+        
 
         {/* Mobile Menu */}
         <div className= {nav ? 'fixed md:hidden left-0 top-0 w-full h-screen bg-black/70' : ''}>  
@@ -104,12 +103,9 @@ const Navbar = () => {
                   <Link href='/'>
                       <li className='py-4 text-sm'>About</li>
                   </Link>
-                  <Link href='/'>
-                      <li className='py-4 text-sm'>Skills</li>
-                  </Link>
-                  <Link href='/'>
+                  {/* <Link href='/'>
                       <li className='py-4 text-sm'>Projects</li>
-                  </Link>
+                  </Link> */}
                   <Link href='/'>
                       <li className='py-4 text-sm'>Contact</li>
                   </Link>

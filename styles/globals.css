@@ -5,8 +5,20 @@
 
 @layer base {
   body {
-    @apply bg-[url('../public/assets/lightanimated3.svg')] dark:bg-[url('../public/assets/darkanimated2.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary dark:text-secondary transition-all ease-in-out; 
+    @apply text-primary dark:text-secondary transition-all ease-in-out; 
     @apply min-h-screen;
+  }
+
+  .bg-one {
+    @apply bg-[url('../public/assets/lightanimated3.svg')] dark:bg-[url('../public/assets/darkanimated5.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary dark:text-secondary transition-all ease-in-out; 
+  }
+
+  .bg-two {
+    @apply bg-[url('../public/assets/lightanimated4.svg')] dark:bg-[url('../public/assets/darkanimated2.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary dark:text-secondary transition-all ease-in-out; 
+  }
+
+  .bg-three {
+    @apply bg-[url('../public/assets/lightanimated5.svg')] dark:bg-[url('../public/assets/darkanimated4.svg')] bg-cover bg-center bg-fixed bg-no-repeat h-screen text-primary dark:text-secondary transition-all ease-in-out; 
   }
 
   .nav {
@@ -44,11 +56,11 @@
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-purple-600 to-purple-300 text-white
+    @apply shadow-md rounded-md uppercase bg-gradient-to-r from-[#3f2b96] to-[#b8a8ff] text-white
   }
 
   .btn{
-    @apply inline-block px-5 py-3 rounded-lg hover:bg-indigo-600 transition duration-300 shadow-lg bg-indigo-500 text-white capitalize tracking-wider font-semibold text-sm sm:text-xl focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 whitespace-nowrap
+    @apply inline-block px-5 py-3 rounded-md hover:bg-indigo-600 transition duration-300 shadow-lg bg-indigo-500 text-white capitalize tracking-wider font-semibold text-sm sm:text-xl focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 whitespace-nowrap
   }
 
 }

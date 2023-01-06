@@ -22,7 +22,7 @@ const Contact = () => {
                             <div className='text-center'>
                                 <h2 className='pt-2 '>Blane Steckline</h2>
                                 <h3 className=''>Full-Stack Developer</h3>
-                                <p className=''>I am open to any and all potential opportunities.</p>
+                                <p className=''>I am open to any and all potential opportunities. If you are interested, please get in touch!</p>
                             </div>
                             <div className='flex items-center max-w-[330px] m-auto justify-between py-4 mt-4'>
                                 <div className='rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>

@@ -5,6 +5,7 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import bg from "../public/assets/yellowWaves.svg"
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 const Hero = () => {
   return (
@@ -63,7 +64,7 @@ const Hero = () => {
                                 ease: 'easeInOut',
                                 }}
                             >
-                                <div className='rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
+                                <div className='rounded-md button-bg shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
                                     <FaLinkedin/>
                                 </div>
                             </motion.div>
@@ -76,7 +77,7 @@ const Hero = () => {
                                 ease: 'easeInOut',
                                 }}
                             >
-                            <div className='rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
+                            <div className='rounded-md button-bg shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
                                 <FaGithub/>
                             </div>
                             </motion.div>
@@ -89,7 +90,7 @@ const Hero = () => {
                                 ease: 'easeInOut',
                                 }}
                             >
-                            <div className='rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
+                            <div className='rounded-md button-bg shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
                                 <AiOutlineMail/>
                             </div>
                             </motion.div>
@@ -102,7 +103,7 @@ const Hero = () => {
                                 ease: 'easeInOut',
                                 }}
                             >
-                            <div className='rounded-md shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
+                            <div className='rounded-md button-bg shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150'>
                                 <BsFillPersonLinesFill/>
                             </div>
                             </motion.div>
@@ -112,6 +113,7 @@ const Hero = () => {
             </div>
         </div>
     </section>
+
     // </div>
   )
 }

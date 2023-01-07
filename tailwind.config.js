@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        quicksand: [
+          '"Quicksand"',
+          'sans-serif',
+        ]
+      },
       backgroundImage:  {
         'yellowwaves': "url('/../public/assets/yellow-waves.svg')",
       },

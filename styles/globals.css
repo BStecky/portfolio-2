@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   body {
     @apply text-primary dark:text-secondary transition-all ease-in-out; 
     @apply min-h-screen;
+    font-family: 'quicksand', sans-serif;
   }
 
   .bg-one {
@@ -23,6 +23,10 @@
 
   .nav {
     @apply bg-[#eeeeee] font-bold dark:bg-[#29263a] dark:font-bold;
+  }
+
+  .button-bg {
+    @apply bg-[#eeeeee]  dark:bg-[#29263a];
   }
 
   /* body {

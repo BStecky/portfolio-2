@@ -89,6 +89,7 @@ const Contact = () => {
         setButtonText("Send");
         return;
       }
+      console.log("response", res.json());
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Send");
@@ -99,27 +100,6 @@ const Contact = () => {
     }
     console.log(fullname, email, subject, message);
   };
-
-  // async function handleSubmit(event: any) {
-  //   event.preventDefault(); // Prevent the default form submission behavior
-  //   // Collect the form data from the event object
-  //   const formData = new FormData(event.target);
-  //   const msg = {
-  //     to: "stecklineblane@gmail.com",
-  //     from: formData.get("email"),
-  //     name: formData.get("name"),
-  //     number: formData.get("number"),
-  //     subject: formData.get("subject"),
-  //     text: formData.get("message"),
-  //   };
-  //   fetch("/api/mail", {
-  //     body: JSON.stringify(msg),
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     method: "POST",
-  //   });
-  // }
 
   return (
     <Layout>

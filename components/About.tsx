@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "./Navbar";
 import Skills from "./Skills";
 import Layout from "./Layout";
+import photo from "../public/assets/me2.png";
 
 const About = () => {
   return (
@@ -59,7 +60,7 @@ const About = () => {
             <div className="rounded-md w-[75%] h-auto m-auto mt-4 shadow-md shadow-gray-600 round-md flex items-center justify-center p-4 hover:scale-105 ease-in duration-100">
               <Image
                 className="rounded-md"
-                src="/../public/assets/me2.png"
+                src={photo}
                 alt="/"
                 width="250"
                 height="250"

@@ -10,6 +10,8 @@ import {
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill, BsSun, BsFillMoonFill } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion";
+import lightNavLogo from "../public/assets/navLogo.png";
+import darkNavLogo from "../public/assets/navLogoDark.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -22,14 +24,14 @@ const Navbar = () => {
       <div className="flex justify-between text-center items-center w-full h-full px-2 2xl:px-16">
         <Image
           className="dark:hidden"
-          src="/../public/assets/navLogo.png"
+          src={lightNavLogo}
           alt="/"
           width="40"
           height="20"
         />
         <Image
           className="invisible dark:visible"
-          src="/../public/assets/navLogoDark.png"
+          src={darkNavLogo}
           alt="/"
           width="40"
           height="20"

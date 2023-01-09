@@ -14,6 +14,7 @@ import sendgrid from "@sendgrid/mail";
 import Navbar from "./Navbar";
 import Layout from "./Layout";
 import { EmailData } from "@sendgrid/helpers/classes/email-address";
+import ComputerPic from "../public/assets/computerpic.png";
 
 const Contact = () => {
   // States for contact form fields
@@ -133,7 +134,7 @@ const Contact = () => {
                   <div className="relative">
                     <Image
                       className="rounded-md mx-auto"
-                      src="/../public/assets/computerpic.png"
+                      src={ComputerPic}
                       alt="/"
                       width="600"
                       height="100"

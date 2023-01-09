@@ -1,6 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import RustLogo from "../public/assets/skills/rust.png";
+import PythonLogo from "../public/assets/skills/pythonlogo.png";
+import Big3Logo from "../public/assets/skills/html-css-js-logo.png";
+import TSLogo from "../public/assets/skills/typescript.png";
+import AnchorLogo from "../public/assets/skills/anchor.png";
+import SolanaLogo from "../public/assets/skills/solana.png";
+import CplusplusLogo from "../public/assets/skills/cpluspluslogo.png";
+import CsharpLogo from "../public/assets/skills/csharplogo.png";
+import ReactLogo from "../public/assets/skills/react.png";
+import NextLogo from "../public/assets/skills/nextlogo.png";
 
 const Skills = () => {
   return (
@@ -18,7 +28,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/rust.png"
+                    src={RustLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -38,7 +48,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/pythonlogo.png"
+                    src={PythonLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -58,7 +68,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/html-css-js-logo.png"
+                    src={Big3Logo}
                     alt="/"
                     width="100"
                     height="64"
@@ -78,7 +88,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/typescript.png"
+                    src={TSLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -98,7 +108,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/anchor.png"
+                    src={AnchorLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -118,7 +128,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/solana.png"
+                    src={SolanaLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -138,7 +148,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/cpluspluslogo.png"
+                    src={CplusplusLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -158,7 +168,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/csharplogo.png"
+                    src={CsharpLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -178,7 +188,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/react.png"
+                    src={ReactLogo}
                     alt="/"
                     width="100"
                     height="64"
@@ -198,7 +208,7 @@ const Skills = () => {
                 >
                   <Image
                     className="m-auto"
-                    src="/../public/assets/skills/nextlogo.png"
+                    src={NextLogo}
                     alt="/"
                     width="100"
                     height="64"

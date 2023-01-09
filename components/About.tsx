@@ -21,9 +21,9 @@ const About = () => {
                 My name is <span className=" text-[#eeeeee]">Blane</span>
               </h2>
               <p className="pt-4 text-lg">
-                When I graduated with my Computer Science degree, I wasn't sure
-                if I wanted to jump straight into the industry. I ended up being
-                a founding coach for PECO (Professional Esports Coaching
+                When I graduated with my Computer Science degree, I wasn&apos;t
+                sure if I wanted to jump straight into the industry. I ended up
+                being a founding coach for PECO (Professional Esports Coaching
                 Organization) and through personal lessons, recorded content,
                 and live streams, taught Overwatch to thousands of different
                 people around the world.
@@ -32,8 +32,8 @@ const About = () => {
                 As the Overwatch chapter of my life came to a close I decided to
                 dust off the old code editor and get to work sharpening my
                 skills again. I quickly found interest in web3 and the Solana
-                blockchain and decided to dive in. Some of the things I've done
-                this past year are :
+                blockchain and decided to dive in. Some of the things I&apos;ve
+                done this past year are :
               </p>
               <ul className="pt-2 text-lg list-disc pl-10">
                 <li>Learnt Rust and the Anchor framework </li>
@@ -51,8 +51,8 @@ const About = () => {
                 </li>
               </ul>
               <p className="pt-2 text-lg">
-                I'm excited to see where my software development career will
-                take me as I continue to develop my skills and myself as an
+                I&apos;m excited to see where my software development career
+                will take me as I continue to develop my skills and myself as an
                 individual.
               </p>
             </div>

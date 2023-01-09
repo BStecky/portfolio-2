@@ -4,9 +4,10 @@ import sendgrid from "@sendgrid/mail";
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  console.log("here");
   const body = JSON.stringify(req.body);
   const msg = JSON.parse(body);
-  console.log(msg);
+  console.log("the message", msg);
   await sendgrid
     .send({
       to: "stecklineblane@gmail.com",

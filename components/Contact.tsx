@@ -65,7 +65,6 @@ const Contact = () => {
     // Collect the form data from the event object
     const formData = new FormData(event.target);
     const msg = {
-      to: "stecklineblane@gmail.com",
       from: formData.get("email"),
       name: formData.get("name"),
       subject: formData.get("subject"),
@@ -74,7 +73,7 @@ const Contact = () => {
     let isValidForm = handleValidation();
     if (isValidForm) {
       setButtonText("Sending");
-      const res = await fetch("/api/sendgrid", {
+      const res = await fetch("/api/mail", {
         body: JSON.stringify(msg),
         headers: {
           "Content-Type": "application/json",
@@ -92,6 +91,10 @@ const Contact = () => {
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Send");
+      setFullname("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
     }
     console.log(fullname, email, subject, message);
   };
@@ -148,18 +151,12 @@ const Contact = () => {
                       are interested, please get in touch!
                     </p>
                   </div>
-                  <div className="flex items-center max-w-[330px] m-auto justify-between py-4 mt-4">
+                  <div className="flex items-center max-w-[120px] m-auto justify-between py-4 mt-4">
                     <div className="rounded-md button-bg shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150">
                       <FaLinkedin />
                     </div>
                     <div className="rounded-md button-bg  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150">
                       <FaGithub />
-                    </div>
-                    <div className="rounded-md button-bg shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150">
-                      <AiOutlineMail />
-                    </div>
-                    <div className="rounded-md button-bg shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-150">
-                      <BsFillPersonLinesFill />
                     </div>
                   </div>
                 </div>
@@ -179,6 +176,9 @@ const Contact = () => {
                           type="text"
                           name="name"
                         ></input>
+                        {(errors as any)?.fullname && (
+                          <p className="text-red-500">Name cannot be empty.</p>
+                        )}
                       </div>
                     </div>
                     <div className="flex flex-col py-2">
@@ -194,6 +194,9 @@ const Contact = () => {
                         type="email"
                         name="email"
                       ></input>
+                      {(errors as any)?.email && (
+                        <p className="text-red-500">Email cannot be empty.</p>
+                      )}
                     </div>
                     <div className="flex flex-col py-2">
                       <label className="uppercase text-sm py-2">Subject</label>
@@ -206,6 +209,9 @@ const Contact = () => {
                           setSubject(event.target.value);
                         }}
                       ></input>
+                      {(errors as any)?.subject && (
+                        <p className="text-red-500">Subject cannot be empty.</p>
+                      )}
                     </div>
                     <div className="flex flex-col py-2">
                       <label className="uppercase text-sm py-2">Message</label>
@@ -218,8 +224,24 @@ const Contact = () => {
                         name="message"
                         rows={10}
                       ></textarea>
+                      {(errors as any)?.message && (
+                        <p className="text-red-500">Message cannot be empty.</p>
+                      )}
                     </div>
                     <button className="w-full py-4 mt-4">{buttonText}</button>
+                    <div>
+                      {showSuccessMessage && (
+                        <h3 className="text-green-300">
+                          {" "}
+                          Thank you, your message has been delivered!
+                        </h3>
+                      )}
+                      {showFailureMessage && (
+                        <h3 className="text-red-500">
+                          Sorry, messaged failed to send. Please try again!
+                        </h3>
+                      )}
+                    </div>
                   </form>
                 </div>
               </div>

@@ -66,7 +66,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-full h-screen bg-black/70 z-20"
+            ? "fixed md:hidden left-0 top-0 w-full h-screen bg-black/70 z-20 ease-in-out duration-200"
             : ""
         }
       >
@@ -117,31 +117,31 @@ const Navbar = () => {
             <div className="pt-10">
               <p className="uppercase tracking-widest">Connect with me!</p>
             </div>
-            <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-              <div className="rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
-                <Link
-                  href="https://www.linkedin.com/in/blane-steckline-996602148/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+            <div className="flex items-center justify-between my-4 max-w-[200px] sm:w-[80%]">
+              <Link
+                href="https://www.linkedin.com/in/blane-steckline-996602148/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
                   <FaLinkedin />
-                </Link>
-              </div>
-              <div className="rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
-                <Link
-                  href="https://github.com/BStecky"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                </div>
+              </Link>
+              <Link
+                href="https://github.com/BStecky"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
                   <FaGithub />
-                </Link>
-              </div>
-              <div className="rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
-                <Link href="/contact" target="_blank" rel="noopener noreferrer">
+                </div>
+              </Link>
+              <Link href="/contact" target="_blank" rel="noopener noreferrer">
+                <div className="rounded-md  shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
                   <AiOutlineMail />
-                </Link>
-              </div>
-              <div className="rounded-md shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
+                </div>
+              </Link>
+              {/* <div className="rounded-md shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
                 <Link
                   href="https://docs.python.org/3/"
                   target="_blank"
@@ -149,7 +149,7 @@ const Navbar = () => {
                 >
                   <BsFillPersonLinesFill />
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

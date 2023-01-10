@@ -82,14 +82,14 @@ const Navbar = () => {
           <div className="flex w-full items-center justify-between">
             <Image
               className="dark:hidden"
-              src="/../public/assets/navLogo.png"
+              src={lightNavLogo}
               alt="/"
               width="40"
               height="20"
             />
             <Image
               className="invisible dark:visible"
-              src="/../public/assets/navLogoDark.png"
+              src={darkNavLogo}
               alt="/"
               width="40"
               height="20"

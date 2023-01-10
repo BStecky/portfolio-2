@@ -17,8 +17,8 @@ const Skills = () => {
     <section className="w-full lg:h-screen p-2 bg-two overflow-visible">
       <div className="max-w-[1240px] min-w-0 mx-auto flex flex-col justify-center h-full">
         <h1 className="text-center pb-10">Skills</h1>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-center">
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 items-center justify-center">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -27,18 +27,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={RustLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">Rust</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">Rust</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -47,18 +47,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={PythonLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">Python</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">Python</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -67,18 +67,20 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={Big3Logo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">HTML JavaScript CSS</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">
+                    HTML JavaScript CSS
+                  </h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -87,18 +89,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={TSLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">TypeScript</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">TypeScript</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -107,18 +109,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={AnchorLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">Anchor</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">Anchor</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -127,18 +129,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={SolanaLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">Solana</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">Solana</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -147,18 +149,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={CplusplusLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">C++</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">C++</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -167,18 +169,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={CsharpLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">C#</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">C#</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 lg:col-span-2 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 lg:col-span-2 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -187,18 +189,18 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={ReactLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">React.js</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">React.js</h3>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="p-6 lg:col-span-2 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
+          <div className="p-2 md:p-4 lg:p-6 lg:col-span-2 bg-[#eeeeee] dark:bg-[#29263a] shadow-xl rounded-md hover:scale-105 ease-in duration-150">
             <div className="flex flex-col gap-4 justify-center items-center text-center">
               <div className="m-auto">
                 <Link
@@ -207,13 +209,13 @@ const Skills = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    className="m-auto"
+                    className="m-auto h-10 w-10 md:h-24 md:w-24"
                     src={NextLogo}
                     alt="/"
                     width="100"
                     height="64"
                   />
-                  <h3 className="pt-2">Next.js</h3>
+                  <h3 className="pt-2 text-sm md:text-lg">Next.js</h3>
                 </Link>
               </div>
             </div>

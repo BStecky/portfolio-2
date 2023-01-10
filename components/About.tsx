@@ -17,16 +17,16 @@ const About = () => {
         >
           <div className="max-w-[680px] m-auto flex flex-col">
             <div className="col-span-3 mb-10 h-auto">
-              <div className="grid grid-cols-2 w-[100%] items-center">
+              <div className="grid grid-cols-2 w-[100%] gap-1 items-center">
                 <div>
                   <h1 className="">About Me</h1>
                   <h2 className="">
                     My name is <span className=" text-[#eeeeee]">Blane</span>
                   </h2>
                 </div>
-                <div className="rounded-md h-auto m-auto mt-4 shadow-md shadow-gray-600 round-md flex items-center justify-center p-4 hover:scale-105 ease-in duration-100">
+                <div className="rounded-md h-auto m-auto mt-4 shadow-sm shadow-gray-600 round-md flex items-center justify-center p-2 md:p-4 hover:scale-105 ease-in duration-100">
                   <Image
-                    className="rounded-md h-auto w-auto"
+                    className="rounded-md w-32 h-32 md:h-auto md:w-auto"
                     src={photo}
                     alt="/"
                     width="250"

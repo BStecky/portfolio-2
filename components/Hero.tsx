@@ -10,7 +10,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import bg from "../public/assets/yellowWaves.svg";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Footer from "./FixedFooter";
 import Link from "next/link";
 import Layout from "./Layout";
 

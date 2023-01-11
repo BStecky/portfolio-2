@@ -2,7 +2,7 @@ import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 import { BsFillPersonLinesFill, BsSun, BsFillMoonFill } from "react-icons/bs";
 
-const Footer = () => {
+const FixedFooter = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -32,7 +32,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="nav py-2 rounded-t-md bottom-0 w-full flex items-center justify-between">
+    <footer className="nav py-2 fixed rounded-t-md bottom-0 w-full flex items-center justify-between">
       <div className="text-center mx-auto">
         Made with <span className="text-red-500">&lt;3</span>
       </div>
@@ -41,4 +41,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FixedFooter;

@@ -11,10 +11,7 @@ const About = () => {
     <Layout>
       <section className="bg-two h-auto">
         <Navbar />
-        <div
-          id="about"
-          className="w-full pb-60 md:h-screen p-2 flex items-center py-16"
-        >
+        <div id="about" className="w-full pb-60 p-2 flex items-center py-16">
           <div className="max-w-[680px] m-auto flex flex-col">
             <div className="col-span-3 mb-10 h-auto">
               <div className="grid grid-cols-2 w-[100%] gap-1 items-center">

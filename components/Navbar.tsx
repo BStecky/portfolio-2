@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className="w-[100%] h-20 z-[100] rounded-b-md ml-auto mr-auto shadow-md nav">
-      <div className="flex justify-between text-center items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between text-center items-center w-full h-full px-5 2xl:px-16">
         <Image
           className="dark:hidden"
           src={lightNavLogo}

@@ -14,7 +14,7 @@ import sendgrid from "@sendgrid/mail";
 import Navbar from "./Navbar";
 import Layout from "./Layout";
 import { EmailData } from "@sendgrid/helpers/classes/email-address";
-import ComputerPic from "../public/assets/computerpic.png";
+import Envelope from "../public/assets/envelope.png";
 
 const Contact = () => {
   // States for contact form fields
@@ -103,9 +103,9 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="bg-three overflow-auto">
+      <section className="bg-three h-full">
         <Navbar />
-        <div id="contact" className="w-full lg:h-screen">
+        <div id="contact" className="w-full lg:h-screen ">
           <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
             <h1 className="text-center">Contact</h1>
             <div className="grid lg:grid-cols-5 gap-8 mt-10">
@@ -114,7 +114,7 @@ const Contact = () => {
                   <div className="relative">
                     <Image
                       className="rounded-md mx-auto"
-                      src={ComputerPic}
+                      src={Envelope}
                       alt="/"
                       width="600"
                       height="100"
